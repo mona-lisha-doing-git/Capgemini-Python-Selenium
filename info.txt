@@ -1,0 +1,31 @@
+# 11-03-2026 (Wednesday)
+SDLC: Requirement Analysis, Feasiblity Analysis, Design, Coding, Testing, Deployment, Maintanence
+
+Software Testing
+Checking if software works as per user Requirements
+
+Two Ways of Testing: - Manual and - Automation
+
+Disadvantage of Manual Testing:
+- Time Consuming
+- Tedious and Monotonous
+- Consistency of work
+- Entirely based on man power
+
+Automation Testing:
+-> Write script once and run it many times.
+
+Test Case: Open Facebook, Enter Valid Username, Enter Valid Password, Click Login
+Test Script: driver.get ...
+
+Advantage:
+- Faster execution (time is saved)
+- Less manpower
+- More accurate results (Consistency and Accuracy)
+- Reusability
+
+Disadvantage:
+- Initial cost is high
+- Technical issues
+- Programming knowledge required
+- Wherever human judgement is required
