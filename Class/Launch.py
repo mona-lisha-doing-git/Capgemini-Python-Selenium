@@ -20,7 +20,6 @@ o.add_experimental_option("detach", True) # telling the chrome browser to not cl
 driver = Chrome(options=o) # driver variable is holding the chrome browser
 # driver.get('https://demoqa.com')
 # driver.get('https://www.google.com')
-driver.get('https://www.amazon.in')
 
 # Browser Window methods
 # driver.maximize_window()
@@ -39,10 +38,14 @@ driver.get('https://www.amazon.in')
 # driver.close()
 # driver.quit()
 
-driver.maximize_window()
-sleep(2)
-print(driver.title)
+'''
+Amazon Title
+'''
+# driver.get('https://www.amazon.in')
+# driver.maximize_window()
+# sleep(2)
+# print(driver.title)
 
 # driver.back()
 # driver.forward()
-driver.refresh()
+# driver.refresh()
