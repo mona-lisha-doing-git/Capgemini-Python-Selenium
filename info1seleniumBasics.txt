@@ -1,0 +1,6 @@
+12-03-2026 (Thursday)
+
+1. Launch the browser and hold it
+2. from selenium.webdriver import Chrome
+3.
+Fetching title for validation purpose

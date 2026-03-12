@@ -29,3 +29,26 @@ Disadvantage:
 - Technical issues
 - Programming knowledge required
 - Wherever human judgement is required
+- Free tool with no customer support
+
+Tools:
+-> Selenium
+-> QTP
+-> Test Complete
+-> Playwright
+
+Selenium
+- Selenium is an antidote to Mercury
+- Open source 
+- Selenium supports 14+ Programming languages
+- Introduced in 2004 by Jason Huggins
+
+Components
+. Selenium RC (2004)
+    -complex because we need to separately install RC server, thats why not currently used
+. Selenium IDE (2006)
+    -record and playback tool 
+. Selenium Webdriver (2009)
+    -we cannot do parallel execution or processing
+. Selenium Grid (2011)
+    -hub to hub
