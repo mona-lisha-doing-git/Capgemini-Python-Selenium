@@ -2,5 +2,7 @@
 
 1. Launch the browser and hold it
 2. from selenium.webdriver import Chrome
-3.
+3. Likewise we can launch in different browsers like Edge, Firefox...
+4. ChromeOptions to make the webpage stay
+5.
 Fetching title for validation purpose

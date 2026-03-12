@@ -15,11 +15,12 @@ from time import sleep
 from selenium.webdriver import Chrome,ChromeOptions
 
 o=ChromeOptions() # ChromeOptions is another class
-o.add_experimental_option("detach", False) # telling the chrome browser to not close the window after launching
+o.add_experimental_option("detach", True) # telling the chrome browser to not close the window after launching
 
 driver = Chrome(options=o) # driver variable is holding the chrome browser
-driver.get('https://demoqa.com')
+# driver.get('https://demoqa.com')
 # driver.get('https://www.google.com')
+driver.get('https://www.amazon.in')
 
 # Browser Window methods
 # driver.maximize_window()
@@ -29,12 +30,19 @@ driver.get('https://demoqa.com')
 # driver.fullscreen_window()
 
 # To fetch the title
-title = driver.title
+# title = driver.title
 # print(title)
 # print(driver.current_url)
 # print(driver.page_source)
 
-sleep(3)
-driver.close()
+# sleep(3)
+# driver.close()
 # driver.quit()
 
+driver.maximize_window()
+sleep(2)
+print(driver.title)
+
+# driver.back()
+# driver.forward()
+driver.refresh()
