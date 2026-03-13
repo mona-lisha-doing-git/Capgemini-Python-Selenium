@@ -1,3 +1,5 @@
+# 12-03-2026 (Thursday)
+
 from time import sleep
 from selenium.webdriver import Chrome, ChromeOptions
 
