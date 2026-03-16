@@ -9,7 +9,7 @@
 7. Browser window methods: minimize, maximize, fullscreen
 8. Difference between driver.close() and driver.quit()
 9. To move from page to page: driver.back(), driver.forward(), driver.refresh()
-10.
+10. Page information properties: driver.current_url, driver.title
 
 13-03-2026 (Friday)
 
@@ -25,3 +25,16 @@
 3. Locators = address of an element (are of 8 types): ID, NAME, CLASS NAME, TAG NAME, LINK TEXT, PARTIAL LINK TEXT, CSS SELECTORS, XPATH
 4. Two element actions we are going to use: click() and send_keys('keys')
 5. CSS SELECTORS <input id='link' type='text'> -> 'tagname[attribute = 'value']'
+
+14-03-2026
+
+1. Priority wise: ID, Name, CSS Selectors, XPath
+2. XPath: X stands for XML Path (extendable markup language)
+    -> We can traverse backward or forward
+    -> Locate elements based on any element (text as well as attribute) (in partial link text or link text only anchor tag elements were located)
+    -> It is used for dynamic elements
+    -> Two types: Absolute (/, starts from root) and Relative (//, directly jumps to element)
+    -> //tagname[@attribute = 'value']
+    -> Can group by indexing
+3. XPath using contains attribute //tagname[contains(@attribute, "value")]
+   XPath using contains text //tagname[contains(text(),'text')] and //tagname[contains(.,'text')]
