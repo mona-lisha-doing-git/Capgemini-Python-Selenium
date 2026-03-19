@@ -27,4 +27,75 @@ sleep(5)
 driver.quit()
 '''
 
+# 15-03-2026 (Monday)
+
+'''
+Fetching dynamic elements in demoqa
+'''
+# driver.get("https://demoqa.com/webtables")
+# driver.maximize_window()
+# salary = driver.find_element(By.XPATH, "//td[text()='Vega']/..//td[5]")
+# print(f"Salary of Cierra: {salary.text}") # .text is a property
 #
+# department = driver.find_element(By.XPATH, "//td[text()='Vega']/..//td[6]")
+# print(f"Department of Cierra: {department.text}")
+#
+# sleep(5)
+# driver.quit()
+
+'''
+Fetching dynamic element
+'''
+# driver.get("https://the-internet.herokuapp.com/tables")
+# driver.maximize_window()
+# due = driver.find_element(By.XPATH, "//td[text()='Bach']/..//td[4]")
+# print(f"Due of Bach Frank: {due.text}") # .text is a property
+#
+# sleep(5)
+# driver.quit()
+
+'''
+Fetching dynamic element: following sibling and preceding sibling
+'''
+# driver.get("https://the-internet.herokuapp.com/tables")
+# driver.maximize_window()
+# due = driver.find_element(By.XPATH, "(//td[text()='Tim'])[1]//following-sibling::td[2]")
+# print(f"Due of Tim: {due.text}")
+#
+# sleep(5)
+# driver.quit()
+
+'''
+Open Amazon
+Search for mobiles -> click on search icon
+use mobile name -> fetch its price
+'''
+# driver.get("https://www.amazon.in")
+# driver.maximize_window()
+# sleep(2)
+# driver.find_element(By.ID, 'twotabsearchtextbox').send_keys("Mobile")
+# sleep(1)
+# driver.find_element(By.ID, 'nav-search-submit-button').click()
+# sleep(1)
+# # driver.find_element(By.XPATH, "//span[contains(text(), 'iPhone 16 Plus 128 GB')][1]").click()
+# # sleep(1)
+# print("Price: ",driver.find_element(By.XPATH, "(//span[text()='₹'])[4]//following-sibling::span").text)
+#
+# sleep(10)
+# driver.quit()
+
+'''
+
+'''
+driver.get("https://www.flipkart.com")
+driver.maximize_window()
+sleep(2)
+
+driver.find_element(By.XPATH, "//span[@role='button']").click()
+sleep(2)
+driver.find_element(By.XPATH, '//input[@placeholder]').send_keys("basketball")
+sleep(2)
+driver.find_element(By.XPATH, "//button[@class='XFwMiH']").click()
+
+sleep(5)
+driver.quit()

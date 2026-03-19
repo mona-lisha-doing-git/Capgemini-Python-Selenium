@@ -24,9 +24,10 @@
     -> [] empty list for no elements
 3. Locators = address of an element (are of 8 types): ID, NAME, CLASS NAME, TAG NAME, LINK TEXT, PARTIAL LINK TEXT, CSS SELECTORS, XPATH
 4. Two element actions we are going to use: click() and send_keys('keys')
-5. CSS SELECTORS <input id='link' type='text'> -> 'tagname[attribute = 'value']'
+5. CSS SELECTORS <input id='link' type='text'> -> 'tagname[attribute = 'value']',
+        Drawbacks:  we cannot use CSS SELECTOR for inner text # Inner text -> visible text
 
-14-03-2026
+14-03-2026 (Saturday)
 
 1. Priority wise: ID, Name, CSS Selectors, XPath
 2. XPath: X stands for XML Path (extendable markup language)
@@ -38,3 +39,30 @@
     -> Can group by indexing
 3. XPath using contains attribute //tagname[contains(@attribute, "value")]
    XPath using contains text //tagname[contains(text(),'text')] and //tagname[contains(.,'text')]
+
+16-03-2026 (Monday)
+
+1. XPath - Traversing(Three types): Forward(/ or // like //div/input[1]), Backward(/..)
+            -> Methods to locate the dynamic element:
+            -> 1. Identify static element. 2. Move to common parent. 3. From the common parent fetch the dynamic element
+            ->
+2. XPath - Sibling: Following Sibling and Preceding Sibling
+            -> Example:
+                <tr>
+                    <td> U/A </td>  // Preceding sibling
+                    <td> Dhurandar 2 </td>  // Static
+                    <td> 4 star </td> // following sibling
+                    <td> 10 cr </td> // following sibling
+                </tr>
+                -> to know the second following sibling and preceding sibling
+                -> //td[text()='Dhurandar 2']//following-sibling::td[2]
+                -> //td[text()='Dhurander 2']//preceding-sibling::td[1]
+
+17-03-2026 (Tuesday)
+
+1. Instead of sleep() we use Implicit Wait, (Global Wait)
+    [find_element() find_element()]-->[Element Presence]-False->[Implicit Wait]-Time is available->[polling frequency 0.5 s/m]
+                                            | true                      | time over
+               [Single web element/ List of web element]        [NoSuchElementException/ Empty list]
+2. from selenium.webdriver.support import expected_conditions as EC
+   from selenium.webdriver.support.ui import WebDriverWait
