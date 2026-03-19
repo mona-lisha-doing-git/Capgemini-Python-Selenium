@@ -105,7 +105,7 @@ Demoqa
 '''
 driver.implicitly_wait(15)
 driver.get("https://demoqa.com/automation-practice-form")
-driver.maximize_window();
+driver.maximize_window()
 
 driver.find_element(By.XPATH, "//input[@placeholder='First Name']").send_keys("Monalisha")
 driver.find_element(By.XPATH, "//input[@placeholder='Last Name']").send_keys("Kalita")
