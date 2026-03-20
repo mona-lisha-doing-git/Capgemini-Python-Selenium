@@ -45,7 +45,7 @@
 1. XPath - Traversing(Three types): Forward(/ or // like //div/input[1]), Backward(/..)
             -> Methods to locate the dynamic element:
             -> 1. Identify static element. 2. Move to common parent. 3. From the common parent fetch the dynamic element
-            ->
+
 2. XPath - Sibling: Following Sibling and Preceding Sibling
             -> Example:
                 <tr>
@@ -66,3 +66,19 @@
                [Single web element/ List of web element]        [NoSuchElementException/ Empty list]
 2. from selenium.webdriver.support import expected_conditions as EC
    from selenium.webdriver.support.ui import WebDriverWait
+
+20-03-2026 (Friday)
+
+1. Dropdowns-->(types) a. select -> html <select> , b.custom -> <li> <div>
+        - Multi select dropdown
+        - Single select dropdown
+
+2. We can access through - visible text, value, index
+          a. # Select by visible text
+                dropdown = driver.find_element(By.ID, "state")
+                option = Select(dropdown)
+          b. # Select by index
+
+          c. # Select by value
+                option.select_by_value('MH')
+3. H/W: Parent, child, backward traversal, ancester, decendent in XPATH
