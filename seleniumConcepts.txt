@@ -82,3 +82,11 @@
           c. # Select by value
                 option.select_by_value('MH')
 3. H/W: Parent, child, backward traversal, ancester, decendent in XPATH
+
+23-03-2026 (Monday)
+
+1. Keyboard Actions: selenium.webdriver.common.Keys have Keys and Keys.ENTER, Keys.CONTROL + 'A', 'C', 'V'
+
+2. ActionChains Class: 1. Create Object 2. Store Action 3. Perform(.perform())
+
+3. a. current_window_handle, b. window_handles, c. switch_to_window()
