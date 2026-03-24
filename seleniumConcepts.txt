@@ -102,3 +102,8 @@
 1. We cannot directly interact with the iframe because it leads to other website.
         a. We can interact using index, name and, web element like id.
         b. Method: driver.switch_to.frame(0) -> first iframe in the current page
+2. Alerts and Popups
+        a. Simple Alerts. switch_to.alerts -> accept method
+        b. Confirmation Alerts
+        c. Prompt Alerts
+3. Enable safe browsing: o.add_experimental_option("prefs", {"safebrowsing.enabled":True}), // disbale notification
