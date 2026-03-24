@@ -1,3 +1,5 @@
+# 17-03-2026 (Tuesday)
+
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By # we generally on import by, keys and action change
 from selenium.webdriver.support import expected_conditions as EC

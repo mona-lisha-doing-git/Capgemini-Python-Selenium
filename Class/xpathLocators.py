@@ -1,4 +1,4 @@
-# 14-03-2026 (Friday)
+# 14-03-2026 (Saturday - Assessment Day so no Practice Task)
 
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
@@ -27,7 +27,7 @@ sleep(5)
 driver.quit()
 '''
 
-# 15-03-2026 (Monday)
+# 16-03-2026 (Monday)
 
 '''
 Fetching dynamic elements in demoqa

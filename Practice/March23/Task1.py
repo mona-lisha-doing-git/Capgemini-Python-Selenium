@@ -1,5 +1,5 @@
 '''
-Test Automation Test
+Test Automation Practice
 mouse hover action
 double click on copy text
 drag and drop

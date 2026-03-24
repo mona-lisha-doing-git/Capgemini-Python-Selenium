@@ -1,4 +1,4 @@
-12-03-2026 (Thursday)
+12-03-2026 (Thursday) - Launch.py
 
 1. Launch the browser and hold it
 2. from selenium.webdriver import Chrome
@@ -11,7 +11,7 @@
 9. To move from page to page: driver.back(), driver.forward(), driver.refresh()
 10. Page information properties: driver.current_url, driver.title
 
-13-03-2026 (Friday)
+13-03-2026 (Friday) - Locators.py
 
 1. anchor tag in html <a href="http..."></a>
 2. find_element(locator_name, locator_value)
@@ -27,7 +27,7 @@
 5. CSS SELECTORS <input id='link' type='text'> -> 'tagname[attribute = 'value']',
         Drawbacks:  we cannot use CSS SELECTOR for inner text # Inner text -> visible text
 
-14-03-2026 (Saturday)
+14-03-2026 (Saturday) - xpathLocators.py
 
 1. Priority wise: ID, Name, CSS Selectors, XPath
 2. XPath: X stands for XML Path (extendable markup language)
@@ -40,7 +40,7 @@
 3. XPath using contains attribute //tagname[contains(@attribute, "value")]
    XPath using contains text //tagname[contains(text(),'text')] and //tagname[contains(.,'text')]
 
-16-03-2026 (Monday)
+16-03-2026 (Monday) - xpathLocators.py
 
 1. XPath - Traversing(Three types): Forward(/ or // like //div/input[1]), Backward(/..)
             -> Methods to locate the dynamic element:
@@ -58,7 +58,7 @@
                 -> //td[text()='Dhurandar 2']//following-sibling::td[2]
                 -> //td[text()='Dhurander 2']//preceding-sibling::td[1]
 
-17-03-2026 (Tuesday)
+17-03-2026 (Tuesday) - ImplicitWait.py
 
 1. Instead of sleep() we use Implicit Wait, (Global Wait)
     [find_element() find_element()]-->[Element Presence]-False->[Implicit Wait]-Time is available->[polling frequency 0.5 s/m]
@@ -67,12 +67,18 @@
 2. from selenium.webdriver.support import expected_conditions as EC
    from selenium.webdriver.support.ui import WebDriverWait
 
-20-03-2026 (Friday)
+
+19-03-2026 (Wednesday) - multipleElements.py
+
+1. driver.find_elements
+2. is_enabled(), is_selected(), is_displayed()
+
+
+20-03-2026 (Friday) - Dropdown.py
 
 1. Dropdowns-->(types) a. select -> html <select> , b.custom -> <li> <div>
         - Multi select dropdown
         - Single select dropdown
-
 2. We can access through - visible text, value, index
           a. # Select by visible text
                 dropdown = driver.find_element(By.ID, "state")
@@ -81,12 +87,18 @@
 
           c. # Select by value
                 option.select_by_value('MH')
-3. H/W: Parent, child, backward traversal, ancester, decendent in XPATH
+3. H/W: Parent, child, backward traversal, ancestor, descendant in XPATH
 
-23-03-2026 (Monday)
+
+23-03-2026 (Monday) - keyboardActions.py
 
 1. Keyboard Actions: selenium.webdriver.common.Keys have Keys and Keys.ENTER, Keys.CONTROL + 'A', 'C', 'V'
-
 2. ActionChains Class: 1. Create Object 2. Store Action 3. Perform(.perform())
+3. Window actions: a. current_window_handle, b. window_handles, c. switch_to_window()
 
-3. a. current_window_handle, b. window_handles, c. switch_to_window()
+
+24-03-2026 (Tuesday) - Iframe.py
+
+1. We cannot directly interact with the iframe because it leads to other website.
+        a. We can interact using index, name and, web element like id.
+        b. Method: driver.switch_to.frame(0) -> first iframe in the current page

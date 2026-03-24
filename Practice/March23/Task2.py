@@ -5,7 +5,7 @@ perform mouse hover action on kids after sometime perform click action on that
 give a scroll(by amount or anything)
 and then click on shop
 pick anyone shoe and give a click
-after that click on add to bag and select a size and then click add to bag
+after that select a size and then click add to bag
 '''
 
 from selenium.webdriver import Chrome, ChromeOptions

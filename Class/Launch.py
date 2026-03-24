@@ -1,3 +1,5 @@
+# 12-03-2026 (Thursday)
+
 # Automated Test Software
 '''from selenium.webdriver import Chrome
 from time import sleep
@@ -12,7 +14,7 @@ driver = Edge()
 sleep(5)'''
 
 from time import sleep
-from selenium.webdriver import Chrome,ChromeOptions
+from selenium.webdriver import Chrome, ChromeOptions
 
 o=ChromeOptions() # ChromeOptions is another class
 o.add_experimental_option("detach", True) # telling the chrome browser to not close the window after launching
