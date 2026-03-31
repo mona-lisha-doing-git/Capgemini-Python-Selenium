@@ -2,14 +2,14 @@
 
 1. Launch the browser and hold it
 2. from selenium.webdriver import Chrome
-3. Likewise we can launch in different browsers like Edge, Firefox...
+3. Like-wise we can launch in different browsers like Edge, Firefox...
 4. ChromeOptions to make the webpage stay
 5. Use sleep function to wait for the browser and then perform the actions
 6. Fetching title for validation purpose
-7. Browser window methods: minimize, maximize, fullscreen
+7. Browser window methods: minimize, maximize, full-screen
 8. Difference between driver.close() and driver.quit()
 9. To move from page to page: driver.back(), driver.forward(), driver.refresh()
-10. Page information properties: driver.current_url, driver.title
+10. Page information properties: driver.current_url, driver.title, driver.name
 
 13-03-2026 (Friday) - Locators.py
 
@@ -64,7 +64,8 @@
     [find_element() find_element()]-->[Element Presence]-False->[Implicit Wait]-Time is available->[polling frequency 0.5 s/m]
                                             | true                      | time over
                [Single web element/ List of web element]        [NoSuchElementException/ Empty list]
-2. from selenium.webdriver.support import expected_conditions as EC
+2. Explicit wait:
+   from selenium.webdriver.support import expected_conditions as EC
    from selenium.webdriver.support.ui import WebDriverWait
 
 

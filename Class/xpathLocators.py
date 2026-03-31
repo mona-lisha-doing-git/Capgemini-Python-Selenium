@@ -70,24 +70,24 @@ Open Amazon
 Search for mobiles -> click on search icon
 use mobile name -> fetch its price
 '''
-# driver.get("https://www.amazon.in")
-# driver.maximize_window()
-# sleep(2)
-# driver.find_element(By.ID, 'twotabsearchtextbox').send_keys("Mobile")
+driver.get("https://www.amazon.in")
+driver.maximize_window()
+sleep(2)
+driver.find_element(By.ID, 'twotabsearchtextbox').send_keys("Mobile")
+sleep(1)
+driver.find_element(By.ID, 'nav-search-submit-button').click()
+sleep(1)
+# driver.find_element(By.XPATH, "//span[contains(text(), 'iPhone 16 Plus 128 GB')][1]").click()
 # sleep(1)
-# driver.find_element(By.ID, 'nav-search-submit-button').click()
-# sleep(1)
-# # driver.find_element(By.XPATH, "//span[contains(text(), 'iPhone 16 Plus 128 GB')][1]").click()
-# # sleep(1)
-# print("Price: ",driver.find_element(By.XPATH, "(//span[text()='₹'])[4]//following-sibling::span").text)
-#
+print("Price: ",driver.find_element(By.XPATH, "(//span[text()='₹'])[4]//following-sibling::span").text)
+
 # sleep(10)
 # driver.quit()
 
 '''
 Flipkart
 '''
-driver.get("https://www.flipkart.com")
+'''driver.get("https://www.flipkart.com")
 driver.maximize_window()
 sleep(2)
 
@@ -98,4 +98,4 @@ sleep(2)
 driver.find_element(By.XPATH, "//button[@class='XFwMiH']").click()
 
 sleep(5)
-driver.quit()
+driver.quit()'''

@@ -40,5 +40,7 @@ From Item 3, get Item 2
 (//a)[3]/preceding::a[1]
 '''
 
-sleep(10)
+print(driver.name)
+
+sleep(2)
 driver.quit()

@@ -61,7 +61,7 @@ sleep(2)
 driver.close()
 '''
 
-# Link Text (include every space, case sensitive)
+# Link Text (include every space, case sensitive): only in anchor tags
 '''
 driver.get('https://www.amazon.in')
 driver.maximize_window()
@@ -85,7 +85,7 @@ sleep(5)
 driver.close()
 '''
 
-#
+# CSS SELECTOR
 '''
 driver.get('https://www.amazon.in')
 driver.maximize_window()

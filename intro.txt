@@ -47,7 +47,7 @@ Components
 . Selenium RC (2004)
     -complex because we need to separately install RC server, thats why not currently used
 . Selenium IDE (2006)
-    -record and playback tool 
+    -record and playback tool
 . Selenium Webdriver (2009)
     -we cannot do parallel execution or processing
 . Selenium Grid (2011)

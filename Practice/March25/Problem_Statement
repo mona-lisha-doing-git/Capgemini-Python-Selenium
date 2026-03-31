@@ -10,7 +10,7 @@ Write a Selenium script to open a website take screenshots.
 
 1) Open https://in.pinterest.com/
 2) Take the screenshot of entire page
-3) Scroll to a picture and caputure the screenshot of the picture
+3) Scroll to a picture and capture the screenshot of the picture
 
 ---
 
@@ -22,7 +22,7 @@ Write a Selenium script in Python to open the Lenskart website,
 1) open the
 2) Click on Eyeglasses
 3) Validate the url using assert
-4) Locate the Sort By  and select the option “Most Viewed”
+4) Locate the Sort By and select the option “Most Viewed”
 5) Capture a screenshot of the webpage and save it to your local system
 
 ---

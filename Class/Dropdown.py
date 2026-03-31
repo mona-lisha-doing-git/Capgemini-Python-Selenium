@@ -41,7 +41,7 @@ Select dropdown
 # option.deselect_all()
 
 '''
-Amazon website dropdown: Custom Dropdown
+Amazon website dropdown: Custom Dropdown/Auto-suggestion
 '''
 driver.implicitly_wait(15)
 driver.get("https://www.amazon.in/")
