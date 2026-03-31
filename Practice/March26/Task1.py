@@ -1,6 +1,6 @@
 """
 Open demowebshop application
-click all the three dropdowns available
+Click all the three dropdowns available
 """
 
 from selenium.webdriver import Chrome,ChromeOptions
