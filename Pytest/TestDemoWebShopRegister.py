@@ -1,5 +1,6 @@
 from time import sleep
 
+import pytest
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
 
@@ -12,6 +13,7 @@ driver.maximize_window()
 
 driver.implicitly_wait(15)
 
+@pytest.mark.regression
 def test_gender():
     driver.find_element(By.XPATH, "//input[@id='gender-female']").click()
 

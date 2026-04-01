@@ -4,7 +4,8 @@
 
 27-03-2026 (Friday)
 
-1. Pytest is a unit testing framework, the rules for:
+1. To run: pytest <file-name>
+2. Pytest is a unit testing framework, the rules for:
         - File should start with test_
         - Function name or method name should also start with test_
         - Class name should start with Test_
@@ -15,3 +16,8 @@
    -s stands for scripting: it will capture all the print statements (pytest captures all output (like print() statements) and only shows it when a test fails)
    * pytest cannot recognize the function which doesn't follow the rule
    * In case of test classes, we need not create object and call the functions, if we do so execution will happen twice
+
+01-04-2026
+
+1. Custom markers using decorators (@pytest.mark.regression)
+   pytest TestAssert.py -m regression
