@@ -7,7 +7,8 @@ o.add_experimental_option('detach', True)
 
 driver = Chrome(options=o)
 
-driver.get("file:///Users/monalishakalita/Downloads/example.html")
+# driver.get("file:///Users/monalishakalita/Downloads/example.html")
+driver.get("https://www.google.com")
 driver.maximize_window()
 
 '''
@@ -40,7 +41,8 @@ From Item 3, get Item 2
 (//a)[3]/preceding::a[1]
 '''
 
-print(driver.name)
+# print(driver.name)
 
 sleep(2)
+driver.close()
 driver.quit()
