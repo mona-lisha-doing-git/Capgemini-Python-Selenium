@@ -108,3 +108,7 @@
         b. Confirmation Alerts
         c. Prompt Alerts
 3. Enable safe browsing: o.add_experimental_option("prefs", {"safebrowsing.enabled":True}), // disbale notification
+
+02-03-2026 (Wednesday)
+
+1. Setup and tear down

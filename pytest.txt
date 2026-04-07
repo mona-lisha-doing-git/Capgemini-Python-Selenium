@@ -21,3 +21,12 @@
 
 1. Custom markers using decorators (@pytest.mark.regression)
    pytest TestAssert.py -m regression
+
+02-04-2026
+
+1. pytest.mark.skip and skipif
+2. pytest.parameterized
+3. Setup and tear down, -> we use pytest.fixture(autouse=True) -> autouse=True for running in to function
+4. Data driven test
+5. . pip freeze > requirements.txt
+   . python3 -m venv venv

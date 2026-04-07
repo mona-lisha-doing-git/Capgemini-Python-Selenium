@@ -6,9 +6,9 @@ get
 delete
 '''
 
-def Post(id1):
+def Post():
     payload = {
-        "id": id1,
+        "id": 111,
         "category": {
             "id": 1,
             "name": "Animal"
@@ -39,6 +39,6 @@ def Delete(id1):
     print(response.status_code)
 
 
-id1 = Post(111)
+id1 = Post()
 Get(id1)
 Delete(id1)
